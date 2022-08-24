@@ -17,3 +17,23 @@ Div з результатом класу відображатиме резуль
 Створіть функцію gameOver(), яка буде відображати кінцевий результат за допомогою кнопки перезавантаження. Функція буде викликана, коли кількість ходів стане рівною 10.
 Викличте функцію playGame() всередині функції game().
 Тепер викличте функцію game() у кінці файлу.
+
+
+
+A div with the class title is used to display the title on the screen.
+A div with a class score contains two more div which will display the score of the player and computer.
+Div with the class move just displays a text and div with class movesleft will show the number of moves left before the game ends.
+A div with a class option contains three button rock, paper, and scissors which the user can use to give the input.
+A div with the class result will display the result of every move and the final result after 10 moves and the button with class reload will allow reloading the game.
+
+[6:45 PM] Богайчук Богдан
+
+Create a function game() that will contain all the logic of the game.
+Inside the function declare three variables playerScore, computerScore, moves which will keep the record of the player’s score, computer’s score, and moves completed respectively.
+Create a function playGame() and inside the function use DOM manipulation to get hold of all the three buttons we created in HTML for player input. Create an array playerOptions which will contain all three buttons as its elements. Similarly, create an array for computer options.
+Use forEach() loop on playerOptions so that we can add an event listener on all buttons with a single piece of code. Inside the loop increment moves counter by 1 display moves left on the screen by subtracting moves from 10. Generate a random value for the computer option and compare it with the player’s input.
+Create a function winner() which will receive two arguments one the player’s input and the other the computer’s option  The function will decide who wins the point among the player and computer.
+Create a function gameOver() which will display the final result with reload button. The function will be called when moves will become equals to 10.
+Call the playGame() function inside the game() function.
+Now call the game() function at the end of the file.
+
